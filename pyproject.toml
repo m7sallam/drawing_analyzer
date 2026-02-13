@@ -1,0 +1,6 @@
+[project]
+name = "drawing_analyzer"
+dependencies = [
+    "opencv-python-headless",
+    "numpy"
+]
