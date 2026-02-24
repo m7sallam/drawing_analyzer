@@ -1,0 +1,17 @@
+[project]
+name = "drawing_analyzer"
+version = "0.0.1"
+description = "AI Area Calculator for 2D Drawings"
+authors = [
+    { name = "Mohamed Sallam", email = "m7.sallam@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+[build-system]
+requires = ["flit_core >=3.4,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.bench.dev-dependencies]
+# Add development dependencies here
