@@ -1,10 +1,12 @@
 import streamlit as st
+import os
 
 st.set_page_config(page_title="Drawing Analyzer", page_icon="📐")
 st.title("Drawing Analyzer AI")
-st.subheader("AI-Powered Area Calculator for 2D Drawings")
+st.write("Upload a 2D drawing to calculate the area.")
 
-uploaded_file = st.file_uploader("Upload your drawing (PDF or Image)", type=['pdf', 'png', 'jpg', 'jpeg'])
+file = st.file_uploader("Upload Drawing", type=["pdf", "png", "jpg"])
 
-if uploaded_file:
-    st.info("File received! Processing for area calculation...")
+if file:
+    st.success("File uploaded! AI processing started...")
+    # Logic from api.py will go here
