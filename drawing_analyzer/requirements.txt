@@ -1,0 +1,3 @@
+frappe-framework
+requests
+opencv-python
