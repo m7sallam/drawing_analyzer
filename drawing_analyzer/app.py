@@ -1,7 +1,10 @@
 import streamlit as st
-import api
+
+st.set_page_config(page_title="Drawing Analyzer", page_icon="📐")
 st.title("Drawing Analyzer AI")
-st.write("Welcome to the AI Area Calculator.")
-uploaded_file = st.file_uploader("Choose a 2D Drawing (PDF/Image)", type=['pdf', 'png', 'jpg'])
-if uploaded_file is not None:
-st.success("File uploaded! Processing...")
+st.subheader("AI-Powered Area Calculator for 2D Drawings")
+
+uploaded_file = st.file_uploader("Upload your drawing (PDF or Image)", type=['pdf', 'png', 'jpg', 'jpeg'])
+
+if uploaded_file:
+    st.info("File received! Processing for area calculation...")
